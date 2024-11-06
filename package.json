@@ -1,0 +1,16 @@
+{
+  "name": "cse341-contacts",
+  "version": "1.0.0",
+  "description": "CSE 341 Project 1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch --env-file=.env app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0"
+  },
+  "author": "Vicente Ferrer",
+  "license": "ISC"
+}
