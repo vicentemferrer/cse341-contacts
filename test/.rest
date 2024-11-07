@@ -1,0 +1,13 @@
+### Get all
+GET http://localhost:3000/contacts/
+
+### Get one
+GET http://localhost:3000/contacts/<contact_id>
+
+########################################################################################
+
+### Get all
+GET https://cse341-contacts-ky1j.onrender.com/contacts/
+
+### Get one
+GET https://cse341-contacts-ky1j.onrender.com/contacts/<contact_id>
