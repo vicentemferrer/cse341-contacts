@@ -33,7 +33,7 @@ async function createContact(req, res) {
   try {
     const result = await createOne(contact);
 
-    if (!result.acknowledge) throw new Error(result.error || 'Not created contact');
+    if (result.length <= 0) throw new Error(result.error || 'Not created contact');
 
     return res
       .status(201)

@@ -1,11 +1,16 @@
 const { Router } = require('express');
 
 const contactsRoute = require('./contacts.route.js');
+const docsRoute = require('./docs.route.js');
 
 const router = new Router();
 
-router.get('/', (req, res) => res.send('Hello World!'));
+router.get('/', (req, res) => {
+  // #swagger.tags = ['Hello World!']
+  return res.send('Hello World!');
+});
 
+router.use('/api-docs', docsRoute);
 router.use('/contacts', contactsRoute);
 
 router.use(async (err, req, res, next) => {
