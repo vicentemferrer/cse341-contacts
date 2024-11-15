@@ -1,11 +1,11 @@
-const { Router } = require('express')
+const { Router } = require('express');
 
-const contactsRoute = require('./contacts.route.js')
+const contactsRoute = require('./contacts.route.js');
 
-const router = new Router()
+const router = new Router();
 
-router.get('/', (req, res) => res.send('Hello World!'))
+router.get('/', (req, res) => res.send('Hello World!'));
 
-router.use('/contacts', contactsRoute)
+router.use('/contacts', contactsRoute);
 
-module.exports = router
+module.exports = router;
