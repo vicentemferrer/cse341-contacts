@@ -4,6 +4,33 @@ GET http://localhost:3000/contacts/
 ### Get one
 GET http://localhost:3000/contacts/<contact_id>
 
+### Create one
+POST http://localhost:3000/contacts/
+Content-Type: application/json
+
+{
+    "firstName": "Luke",
+    "lastName": "Cage",
+    "email": "lukecage@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "1987-05-04"
+}
+
+### Update one
+PUT http://localhost:3000/contacts/<contact_id>
+Content-Type: application/json
+
+{
+    "firstName": "Luke",
+    "lastName": "Fist",
+    "email": "lukecage@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "1987-12-04"
+}
+
+### Delete one
+DELETE http://localhost:3000/contacts/<contact_id>
+
 ########################################################################################
 
 ### Get all
@@ -11,3 +38,30 @@ GET https://cse341-contacts-ky1j.onrender.com/contacts/
 
 ### Get one
 GET https://cse341-contacts-ky1j.onrender.com/contacts/<contact_id>
+
+### Create one
+POST https://cse341-contacts-ky1j.onrender.com/contacts/
+Content-Type: application/json
+
+{
+    "firstName": "Luke",
+    "lastName": "Cage",
+    "email": "lukecage@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "1987-05-04"
+}
+
+### Update one
+PUT https://cse341-contacts-ky1j.onrender.com/contacts/<contact_id>
+Content-Type: application/json
+
+{
+    "firstName": "Luke",
+    "lastName": "Fist",
+    "email": "lukecage@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "1987-12-04"
+}
+
+### Delete one
+DELETE https://cse341-contacts-ky1j.onrender.com/contacts/<contact_id>
